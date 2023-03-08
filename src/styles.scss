@@ -1,7 +1,402 @@
 /* You can add global styles to this file, and also import other style files */
+/*
+ *  Document   : _general.scss
+ *  Author     : Amr Hesham
+ *  Description: This scss file for all common style classes
+ */
 
-/* Importing Bootstrap SCSS file. */
+:root {
+    // colors
+    --mainColor: #66d1c8;
+    --subColor: #74e9df;
+    --thirdColor: #c5efeb;
+    --content: #b5b4b5;
+    --bg_content: #ffff;
+    // font color;
+    --placeholder: #b6b6b6;
+    --border: #e0e0e0;
+
+
+
+
+    /** typography **/
+    --fs-1: 1.563rem;
+    --fs-2: 1.375rem;
+    --fs-3: 1.25rem;
+    --fs-4: 1.125rem;
+    --fs-5: 1rem;
+    --fs-6: 0.938rem;
+    --fs-7: 0.875rem;
+    --fs-8: 0.813rem;
+    --fs-9: 0.75rem;
+    --fs-10: 0.688rem;
+    --fs-11: 0.625rem;
+
+    /**  border-radius **/
+    --border-radius-md: 10px;
+    --border-radius-sm: 5px;
+
+    /** transition **/
+    --transition-timing: 0.2s ease;
+
+
+    --onyx: hsl(0, 0%, 27%);
+}
+
+
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
 @import '~bootstrap/scss/bootstrap';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@font-face {
+    font-family: 'Cairo-Regular';
+    src: url('./assets/fonts/Cairo/Cairo-Regular.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cairo-Black';
+    src: url('./assets/fonts/Cairo/Cairo-Black.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cairo-Bold';
+    src: url('./assets/fonts/Cairo/Cairo-Bold.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cairo-ExtraBold';
+    src: url('./assets/fonts/Cairo/Cairo-ExtraBold.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cairo-ExtraLight';
+    src: url('./assets/fonts/Cairo/Cairo-ExtraLight.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cairo-Light';
+    src: url('./assets/fonts/Cairo/Cairo-Light.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cairo-Medium';
+    src: url('./assets/fonts/Cairo/Cairo-Medium.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cairo-SemiBold';
+    src: url('./assets/fonts/Cairo/Cairo-SemiBold.ttf');
+    font-style: normal;
+}
+
+body,
+html {
+    font-family: "Cairo-Regular" !important;
+    font-size: 13px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+button,
+input,
+select,
+a {
+    outline: none !important;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+.row {
+    margin-bottom: 0px !important;
+}
+
+ol,
+ul,
+dl {
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+.no-animate {
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.jqvmap-zoomin,
+.jqvmap-zoomout {
+    width: 15px;
+    height: 15px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    font: inherit;
+}
+
+input::placeholder {
+    font: inherit;
+}
+
+
+/***************** Helpers ***********************/
+
+
+.margin-0 {
+    margin: 0;
+}
+
+.mrg-5 {
+    margin: 10px;
+}
+
+.mrg-10 {
+    margin: 10px;
+}
+
+.mrg-20 {
+    margin: 20px;
+}
+
+.mrg-30 {
+    margin: 30px;
+}
+
+.mrg-40 {
+    margin: 40px;
+}
+
+.mrg-50 {
+    margin: 50px;
+}
+
+.mrg-60 {
+    margin: 60px;
+}
+
+.mrg-70 {
+    margin: 70px;
+}
+
+.mrg-80 {
+    margin: 80px;
+}
+
+.mrg-90 {
+    margin: 90px;
+}
+
+.mrg-100 {
+    margin: 100px;
+}
+
+.padding-0 {
+    padding: 0;
+}
+
+.pd-5 {
+    padding: 5px;
+}
+
+.pd-10 {
+    padding: 10px;
+}
+
+.pd-15 {
+    padding: 15px;
+}
+
+.pd-20 {
+    padding: 20px;
+}
+
+.pd-30 {
+    padding: 30px;
+}
+
+.pd-40 {
+    padding: 40px;
+}
+
+.pd-50 {
+    padding: 50px;
+}
+
+.pd-60 {
+    padding: 60px;
+}
+
+.pd-70 {
+    padding: 70px;
+}
+
+.pd-80 {
+    padding: 80px;
+}
+
+.pd-90 {
+    padding: 90px;
+}
+
+.pd-100 {
+    padding: 100px;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-justify {
+    text-align: justify;
+}
+
+.no-resize {
+    resize: none;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.font-underline {
+    text-decoration: underline;
+}
+
+.font-line-through {
+    text-decoration: line-through;
+}
+
+.font-overline {
+    text-decoration: overline;
+}
+
+
+/****************************** RTL ******************************/
+.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+/*************************** Pages *********************************/
+/* [Ads-Navbar] */
+.ads-navbar {
+    text-align: center;
+    background-color: var(--thirdColor);
+}
+
+/* [Navbar] */
+.header-main {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.header-logo {
+    margin-bottom: 20px;
+}
+
+.header-logo img {
+    margin: auto;
+}
+
+.header-search-container {
+    position: relative;
+}
+
+.header-search-container .search-field {
+    font-size: var(--fs-7);
+    color: var(--onyx);
+    padding: 10px 15px;
+    padding-right: 50px;
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius-md);
+}
+
+.search-field::-webkit-search-cancel-button {
+    display: none;
+}
+
+.search-btn {
+    background: var(--bg_content);
+    position: absolute;
+    top: 50%;
+    right: 2px;
+    transform: translateY(-50%);
+    color: var(--onyx);
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: var(--border-radius-md);
+    transition: color var(--transition-timing);
+}

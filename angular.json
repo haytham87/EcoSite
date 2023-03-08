@@ -25,10 +25,26 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*.svg",
+                "input": "node_modules/ionicons/dist/ionicons/svg",
+                "output": "./svg"
+              }
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "./node_modules/@ionic/angular/css/core.css",
+              "./node_modules/@ionic/angular/css/normalize.css",
+              "./node_modules/@ionic/angular/css/structure.css",
+              "./node_modules/@ionic/angular/css/typography.css",
+              "./node_modules/@ionic/angular/css/display.css",
+              "./node_modules/@ionic/angular/css/padding.css",
+              "./node_modules/@ionic/angular/css/float-elements.css",
+              "./node_modules/@ionic/angular/css/text-alignment.css",
+              "./node_modules/@ionic/angular/css/text-transformation.css",
+              "./node_modules/@ionic/angular/css/flex-utils.css",
+              "./src/theme/variables.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -94,13 +110,42 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*.svg",
+                "input": "node_modules/ionicons/dist/ionicons/svg",
+                "output": "./svg"
+              }
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        },
+        "ionic-cordova-serve": {
+          "builder": "@ionic/angular-toolkit:cordova-serve",
+          "options": {
+            "cordovaBuildTarget": "EcoSite:ionic-cordova-build",
+            "devServerTarget": "EcoSite:serve"
+          },
+          "configurations": {
+            "production": {
+              "cordovaBuildTarget": "EcoSite:ionic-cordova-build:production",
+              "devServerTarget": "EcoSite:serve:production"
+            }
+          }
+        },
+        "ionic-cordova-build": {
+          "builder": "@ionic/angular-toolkit:cordova-build",
+          "options": {
+            "browserTarget": "EcoSite:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "EcoSite:build:production"
+            }
           }
         }
       }

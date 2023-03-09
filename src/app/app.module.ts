@@ -13,6 +13,9 @@ import { NavbarComponent } from './Layout/navbar/navbar.component';
 import { SubNavbarComponent } from './Layout/sub-navbar/sub-navbar.component';
 import { FooterComponent } from './Layout/footer/footer.component';
 
+import { FeatherModule } from "angular-feather";
+import { allIcons } from "angular-feather/icons";
+
 import {
   HttpClientModule,
   HTTP_INTERCEPTORS,
@@ -36,6 +39,7 @@ import { environment } from 'src/environments/environment';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    FeatherModule.pick(allIcons),
     BrowserAnimationsModule,
     CoreModule,
 

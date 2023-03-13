@@ -10,6 +10,7 @@
     --mainColor: #66d1c8;
     --subColor: #74e9df;
     --thirdColor: #c5efeb;
+    --featureColor: #693945;
     --content: #b5b4b5;
     --bg_content: #ffff;
     // font color;
@@ -201,6 +202,13 @@ input {
 
 input::placeholder {
     font: inherit;
+}
+
+button {
+    background: none;
+    font: inherit;
+    border: none;
+    cursor: pointer;
 }
 
 
@@ -405,7 +413,7 @@ input::placeholder {
     transition: var(--transition-timing);
 
     &:hover {
-        background: var(--thirdColor);
+        background: var(--featureColor);
         color: var(--white);
     }
 }
@@ -422,17 +430,191 @@ input::placeholder {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 80px;
 }
+
+.mobile-header {
+    display: none;
+}
+
+@media (max-width: 960px) {
+    .nav-con {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .header-search-conatiner {
+        min-width: 80% !important;
+    }
+
+    .header-user-actions, .header-logo {
+        display: none !important;
+    }
+
+    .mobile-header {
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        gap: 80px;
+    }
+
+    #mobile-menu {
+        position: relative;
+        top: 20%;
+        left: 5%;
+        transform: translate(5%, 0%);
+    }
+
+    .menu-toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-toggle:hover {
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+.menu-toggle .bar{
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: var(--featureColor);
+    cursor: pointer;
+}
+
+
 
 .header-main {
     padding: 20px 0;
     border-bottom: 1px solid var(--border);
 }
 
-.header-logo {
-    margin-bottom: 20px;
-}
+// .header-logo {
+//     margin-bottom: 20px;
+// }
 
 .header-logo img {
     margin: auto;
+}
+
+.header-search-conatiner {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    min-width: 300px;
+    position: relative;
+}
+
+.search-field {
+    font-size: 14px;
+    color: var(--onyx);
+    padding: 13px 15px;
+    padding-left: 50px;
+    border: 1px solid var(--cultured);
+    border-radius: var(--border-radius-md)
+}
+
+.search-btn {
+    background: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: var(--onyx);
+    font-size: 18px;
+    padding: 8px 15px;
+    -webkit-border-radius: var(--border-radius-md);
+    border-radius: var(--border-radius-md);
+    -webkit-transition: color var(--transition-timing);
+    -o-transition: color var(--transition-timing);
+    transition: color var(--transition-timing);
+
+    &:hover {
+        color: var(--featureColor);
+    }
+
+    i-feather {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.header-user-actions {
+    font-size: 16px;
+    font-family: 'Cairo-SemiBold';
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 15px;
+    color: var(--onyx);
+}
+
+.lang {
+    cursor: pointer;
+    -webkit-transition: color var(--transition-timing);
+    -o-transition: color var(--transition-timing);
+    transition: color var(--transition-timing);
+
+    &:hover {
+        color: var(--eerie-black);
+    }
+}
+
+.hello-account {
+    color: var(--spanish-gray);
+    font-size: 12px;
+}
+
+.account {
+    // padding-left: 10px;
+    // border-left: 1px solid var(--cultured);
+    cursor: pointer;
+    -webkit-transition: color var(--transition-timing);
+    -o-transition: color var(--transition-timing);
+    transition: color var(--transition-timing);
+}
+
+.borderd {
+    height: 50px;
+    border-left: 1px solid var(--cultured); 
+}
+
+.action-btn {
+    position: relative;
+}
+
+.count {
+    position: absolute;
+    top: -2px;
+    right: -3px;
+    background: var(--featureColor);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: var(--weight-500);
+    line-height: 1;
+    padding: 2px 4px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
 }

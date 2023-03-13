@@ -2,12 +2,28 @@
   <div class="header-main">
     <div class="container-fluid">
       <div class="nav-con">
+        <div class="mobile-header">
+          <div class="mobile-logo">
+            <a routerLink="/home">
+              <img src="../../../assets/images/main-logo-black.png" alt="NosaLogo" class="logo" width="190" height="63">
+            </a>
+          </div>
+          <!-- <div class="mobile-menu" style="margin-top: 20px;">
+            <span class="burger" id="burger"></span>
+          </div> -->
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+
         <a routerLink="/home" class="header-logo">
           <img src="../../../assets/images/main-logo-black.png" alt="NosaLogo" class="logo" width="190" height="63">
         </a>
 
         <div class="header-search-conatiner">
-          <input type="search" name="search" class="search-field" placeholder="أنت بتدور على ايه؟">
+          <input name="search" class="search-field" placeholder="أنت بتدور على ايه؟">
 
           <button class="search-btn">
             <i-feather name="search"></i-feather>
@@ -16,9 +32,13 @@
 
         <div class="header-user-actions">
 
-          <span>العربية</span>
+          <span class="lang">English</span>
 
-          <span>مرحباً عمرو</span>
+          <div class="borderd"></div>
+
+          <span class="account"><span class="hello-account">أهلاً أمنية!</span> <br> معلومات حسابي</span>
+
+          <div class="borderd"></div>
 
           <button class="action-btn">
             <i-feather name="shopping-cart"></i-feather>

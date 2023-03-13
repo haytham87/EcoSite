@@ -10,6 +10,12 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    const menu = document.querySelector('#mobile-menu');
+    if(menu){
+      menu.addEventListener('click', function(){
+        menu.classList.toggle('is-active');
+    });
+    }
   }
 
 }

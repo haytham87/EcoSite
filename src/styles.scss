@@ -1038,7 +1038,8 @@ button {
     gap: 10px;
 }
 
-.menu-bottom .menu-category-list, .menu-social-container {
+.menu-bottom .menu-category-list,
+.menu-social-container {
     padding-right: 0;
 }
 
@@ -1063,4 +1064,114 @@ button {
         display: none;
     }
 
+}
+
+/* [Main-Footer] */
+footer {}
+
+.main-footer {
+    background: rgb(39 39 39);
+    color: var(--white);
+    padding: 75px 20px 50px;
+}
+
+.footer-nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    justify-content: flex-end;
+}
+
+@media (max-width: 1117px) {
+    .footer-nav {
+        justify-content: center;
+    }
+
+}
+
+.logo-mark img {
+    width: 30%;
+    transition: var(--transition-timing);
+    opacity: 1;
+
+    &:hover {
+        transition: var(--transition-timing);
+        opacity: 0.8;
+    }
+}
+
+.logo-mark P {
+    color: #b6b6b6;
+    margin: 20px 0;
+}
+
+.last-footer {
+    background: #000;
+    color: var(--white);
+    font-size: 12px;
+    display: flex;
+    padding: 20px 20px;
+    align-items: center;
+}
+
+.footer-nav-list:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.footer-nav-item .nav-title {
+    position: relative;
+    color: var(--white);
+    font-size: 14px !important;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+.footer-nav-item .nav-title::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--salmon-pink);
+    width: 60px;
+    height: 1px;
+}
+
+.footer-nav-item {
+    padding: 3px 0;
+}
+
+.footer-nav-link,
+.footer-nav-item .content {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    color: var(--sonic-silver);
+    font-size: 14px;
+    -webkit-transition: var(--transition-timing);
+    -o-transition: var(--transition-timing);
+    transition: var(--transition-timing);
+}
+
+.footer-nav-link:hover {
+    color: var(--salmon-pink);
+}
+
+.footer-nav-item.flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 10px;
 }

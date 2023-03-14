@@ -21,6 +21,7 @@ import { TermsConditionsComponent } from './terms-conditions/terms-conditions.co
 import { WishlistComponent } from './wishlist/wishlist.component';
 
 import { MainRoutingModule } from './main-routing.module';
+import { MatTabsModule } from '@angular/material/tabs';
 
 
 
@@ -47,6 +48,7 @@ import { MainRoutingModule } from './main-routing.module';
   ],
   imports: [
     MainRoutingModule,
+    MatTabsModule,
     CommonModule
   ]
 })

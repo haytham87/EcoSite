@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +23,7 @@ import {
 } from '@angular/common/http';
 
 import { environment } from 'src/environments/environment';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -40,11 +41,15 @@ import { environment } from 'src/environments/environment';
     AppRoutingModule,
     NgbModule,
     FeatherModule.pick(allIcons),
+    MatTabsModule,
     BrowserAnimationsModule,
     CoreModule,
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
 })
 export class AppModule { }

@@ -135,6 +135,7 @@ h4,
 h5,
 h6 {
     font-weight: bold;
+    font-family: 'Cairo-Bold' !important;
 }
 
 button,
@@ -1174,4 +1175,73 @@ footer {}
     -ms-flex-align: start;
     align-items: flex-start;
     gap: 10px;
+}
+
+/* [Home] */
+.screen {
+    padding: 50px 0;
+}
+
+.category-home,
+.featured-offers-main1,
+.featured-offers-main2,
+.featured-offers-item {
+    background-color: #f6f7f8;
+    border-radius: var(--border-radius-md);
+}
+
+.category-home-main {
+    height: 620px;
+}
+
+.category-home-main-split {
+    height: 300px;
+}
+
+.screen-section {
+    padding: 80px 0;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    font-family: 'Cairo-Bold' !important;
+}
+
+.mat-tab-label,
+.mat-tab-link {
+    font-size: 16px;
+    font-family: 'Cairo-Bold' !important;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar {
+    background-color: var(--salmon-pink);
+}
+
+.mat-tab-label-active {
+    color: var(--salmon-pink);
+}
+
+@media (max-width: 990px) {
+    .sec {
+        margin-bottom: 25px;
+    }
+}
+
+.featured-offers-main1, .featured-offers-item {
+    height: 400px;
+}
+
+.featured-offers-main2 {
+    height: 190px;
+}
+
+.tab-body {
+    margin: 20px;
+}
+
+.sec2 {padding-bottom: 15px;}
+.ad-banner {
+    background-color: var(--light-feature);
+    border-radius: var(--border-radius-md);
+    height: 200px;
 }

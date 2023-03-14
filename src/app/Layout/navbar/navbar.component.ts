@@ -11,10 +11,22 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
     const menu = document.querySelector('#mobile-menu');
-    if(menu){
-      menu.addEventListener('click', function(){
+    const menuLinks = document.querySelector('.mobile-navigation-menu');
+    if (menu && menuLinks) {
+      menu.addEventListener('click', function () {
         menu.classList.toggle('is-active');
-    });
+        menuLinks.classList.toggle('active');
+      });
+    }
+
+
+    const langBtn = document.querySelector('.caret-back');
+    const langList = document.querySelector('.Lang-list');
+    if (langBtn) {
+      langBtn.addEventListener('click', function () {
+        langBtn.classList.toggle('is-active');
+        langList?.classList.toggle('active');
+      })
     }
   }
 

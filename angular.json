@@ -37,7 +37,9 @@
               "./src/theme/variables.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jsMenu.js"
+            ]
           },
           "configurations": {
             "production": {

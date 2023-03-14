@@ -22,10 +22,12 @@
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
     "@ng-bootstrap/ng-bootstrap": "^13.0.0",
+    "@ngu/carousel": "^7.0.0",
     "@popperjs/core": "^2.10.2",
     "angular-feather": "^6.5.0",
     "bootstrap": "^5.2.0",
     "rxjs": "~7.5.0",
+    "swiper": "^6.8.1",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },

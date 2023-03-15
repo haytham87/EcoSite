@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { DeliveryComponent } from './delivery/delivery.component';
 import { FaqComponent } from './faq/faq.component';
 import { HomeComponent } from './home/home.component';
+import { Page404Component } from './page404/page404.component';
 import { PaymentComponent } from './payment/payment.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { ProductComponent } from './product/product.component';
@@ -73,7 +74,8 @@ const routes: Routes = [{
         {
             path: 'termsAndConditions',
             component: TermsConditionsComponent,
-        }
+        },
+        { path: '**', component: Page404Component }
     ]
 }]
 

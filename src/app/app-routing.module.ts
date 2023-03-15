@@ -3,8 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { MainLayoutComponent } from './Layout/app-layout/main-layout/main-layout.component';
 import { AuthLayoutComponent } from './Layout/app-layout/auth-layout/auth-layout.component';
-import { Page404Component } from './pages/authentication/page404/page404.component';
-import { Page500Component } from './pages/authentication/page500/page500.component';
 
 const routes: Routes = [
   {
@@ -15,10 +13,9 @@ const routes: Routes = [
       {
         path: '',
         loadChildren: () => import('./pages/main/main.module').then(m => m.MainModule),
-      }
+      },
     ]
   },
-  { path: '**', component: Page404Component }
 ];
 
 @NgModule({

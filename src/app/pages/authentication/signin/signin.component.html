@@ -1,1 +1,40 @@
-<p>signin works!</p>
+<div class="auth-screen">
+    <div class="container" style="text-align: center;">
+        <div class="auth-con">
+            <img src="../../../../assets/images/main-logo-white.png" alt="" [width]="336" [height]="112">
+
+            <div class="auth-card pd-40">
+                <h2>أهلاً بيك تاني!</h2>
+                <h1>تسجيل الدخول إلى حسابك</h1>
+                <h3>لسه معندكش حساب؟ <a href="#">اشترك الآن</a></h3>
+
+                <div class="auth-form">
+                    <form #signinForm="ngForm" id="signinForm" class="needs-validation" novalidate>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group">
+                                    <label for="txtEmail">البريد الالكتروني</label>
+                                    <input type="email" id="txtEmail" name="email" class="search-field auth-field"/>
+
+                                    <!-- <small class="text text-danger" *ngIf="!txtEmail.valid && (txtEmail.dirty || txtEmail.touched)">لازم تكتب الإيميل</small> -->
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group">
+                                    <label for="txtPassword">كلمه السر</label>
+                                    <input type="password" id="txtPassword" name="password" class="search-field auth-field"/>
+
+                                    <!-- <small class="text text-danger" *ngIf="!txtPassword.valid && (txtPassword.dirty || txtPassword.touched)">لازم تكتب كلمة السر</small> -->
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <h3><a href="#">نسيت كلمة السر؟</a></h3>
+                <button class="btn41-43 btn-41">تسجيل الدخول</button>
+            </div>
+        </div>
+    </div>
+</div>

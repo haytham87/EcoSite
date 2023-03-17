@@ -24,6 +24,7 @@ import {
 
 import { environment } from 'src/environments/environment';
 import { MatTabsModule } from '@angular/material/tabs';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -43,6 +44,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     NgbModule,
     FeatherModule.pick(allIcons),
     MatTabsModule,
+    FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     CoreModule,
 

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-forget-password',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ForgetPasswordComponent implements OnInit {
 
+  @ViewChild('forgetPasswordForm', { static: false }) forgetPasswordForm: NgForm | undefined;
   constructor() { }
 
   ngOnInit(): void {

@@ -19,6 +19,13 @@ export class NavbarComponent implements OnInit {
       });
     }
 
+    const menuClose = document.querySelector('.menu-close-btn');
+    if(menuClose && menuLinks) {
+      menuClose.addEventListener('click', function () {
+        menuLinks.classList.toggle('active');
+      })
+    }
+
 
     const langBtn = document.querySelector('.caret-back');
     const langList = document.querySelector('.Lang-list');
@@ -29,5 +36,4 @@ export class NavbarComponent implements OnInit {
       })
     }
   }
-
 }

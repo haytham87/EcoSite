@@ -1,1 +1,97 @@
-<p>contact works!</p>
+<div class="screen" style="background: url(../../../../assets/images/banners/contact-bg.png) center / cover no-repeat;opacity: 0.7;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="contact-info">
+                    <div class="contact-info-card">
+                        <h2>تواصل معنا</h2>
+                        <br>
+                        <ul>
+                            <li>
+                                <div class="pin-box">
+                                    <i-feather name="map-pin"></i-feather>
+                                    <h3>العنوان</h3>
+                                </div>
+                                <div class="pin-info">
+                                    <h4>26 شارع الجلاء، فيكتوريا، الإسكندرية، مصر</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pin-box">
+                                    <i-feather name="phone-call"></i-feather>
+                                    <h3>ارقام التليفون</h3>
+                                </div>
+                                <div class="pin-info">
+                                    <h4>تليفون : +88 (0) 101 0000 000</h4>
+                                    <h4>فاكس : +88 (0) 202 0000 001</h4>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="pin-box">
+                                    <i-feather name="mail"></i-feather>
+                                    <h3>البريد الالكتروني</h3>
+                                </div>
+                                <div class="pin-info">
+                                    <h4>info@nosaskincare.com</h4>
+                                    <h4>omnia@nosaskincare.com</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="send-msg">
+                    <h2>راسلنا على البريد الالكتروني</h2>
+                    <br>
+                    <form #contactForm="ngForm" id="contactForm" class="needs-validation" novalidate>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    <input type="text" id="txtName" name="Name" class="search-field auth-field" placeholder="الاسم"/>
+                                    <!-- <small class="text text-danger" *ngIf="!txtName.valid && (txtName.dirty || txtName.touched)">لازم تكتب اسم</small> -->
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    <input type="email" id="txtEmail" name="Email" class="search-field auth-field" placeholder="البريد الالكتروني"/>
+                                    <!-- <small class="text text-danger" *ngIf="!txtEmail.valid && (txtEmail.dirty || txtEmail.touched)">لازم تكتب بريد الكتروني</small> -->
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    <input type="text" id="txtPhone" name="Phone" class="search-field auth-field" placeholder="رقم التليفون"/>
+                                    <!-- <small class="text text-danger" *ngIf="!txtPhone.valid && (txtPhone.dirty || txtPhone.touched)">لازم تكتب رقم التليفون</small> -->
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group">
+                                    <input type="text" id="txtMsgTitle" name="MsgTitle" class="search-field auth-field" placeholder="عنوان الرساله"/>
+                                    <!-- <small class="text text-danger" *ngIf="!txtMsgTitle.valid && (txtMsgTitle.dirty || txtMsgTitle.touched)">لازم تكتب عنوان الرساله</small> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group">
+                                    <textarea id="txtMsg" name="Msg" class="search-field auth-field" placeholder="الرساله" style="width: -webkit-fill-available;" rows="7"></textarea>
+                                    <!-- <small class="text text-danger" *ngIf="!txtMsgTitle.valid && (txtMsgTitle.dirty || txtMsgTitle.touched)">لازم تكتب الرساله</small> -->
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <button class="btn41-43 btn-41">إرسال</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -25,6 +25,8 @@ import { MainRoutingModule } from './main-routing.module';
 import { MatTabsModule } from '@angular/material/tabs';
 import { DonePaymentComponent } from './done-payment/done-payment.component';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -52,6 +54,7 @@ import { DonePaymentComponent } from './done-payment/done-payment.component';
   imports: [
     MainRoutingModule,
     MatTabsModule,
+    FormsModule, ReactiveFormsModule,
     FeatherModule,
     CommonModule
   ]

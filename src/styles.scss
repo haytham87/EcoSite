@@ -1865,10 +1865,80 @@ footer {}
     }
 }
 
+.delivery-card {
+    background: var(--white);
+    padding: 25px;
+    border-radius: var(--border-radius-md);
+    margin-bottom: 20px;
+
+    .delivery-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h2 {
+            margin-bottom: 0;
+        }
+
+        .btn-41 {
+            margin-top: 0;
+        }
+
+        .btn41-43 {
+            padding: 10px 35px;
+            font-family: "Cairo-Bold";
+            font-weight: 500;
+            background: transparent;
+            outline: none !important;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            font-size: 10px;
+            display: inline-block;
+        }
+    }
+
+    .adress-con {
+        margin: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .addrees {
+        padding: 30px 30px 30px 150px !important;
+        border-radius: var(--border-radius-md);
+        border: 2px solid var(--brdcolor-gray-300);
+        color: var(--content);
+        cursor: pointer;
+        transition: var(--transition-timing);
+
+        &:hover {
+            border-color:  var(--featureColor);
+        }
+
+        &:focus {
+            border-color: var(--featureColor);
+        }
+
+        h4 {
+            font-family: 'Cairo-Medium' !important;
+        }
+    }
+
+    @media (max-width: 1402px) {
+        .addrees {
+            width: 100%;
+        }
+    }
+}
+
 .payment-method-card {
     background: var(--white);
     padding: 25px;
     border-radius: var(--border-radius-md);
+    margin-bottom: 20px;
 }
 
 .paycard {
@@ -1912,6 +1982,8 @@ footer {}
         transition: var(--transition-timing);
     }
 }
+
+
 
 .summrycard {
     background: var(--white);
@@ -1965,7 +2037,7 @@ footer {}
     border-color: var(--featureColor) !important;
 }
 
-.pretty.p-default input:checked ~ .state label:after {
+.pretty.p-default input:checked~.state label:after {
     background-color: var(--featureColor) !important;
 }
 
@@ -1975,7 +2047,8 @@ footer {}
 }
 
 .payment-title {
-    display: inline-block;margin: 0 20px;
+    display: inline-block;
+    margin: 0 20px;
 }
 
 @import '~pretty-checkbox/src/pretty-checkbox.scss';

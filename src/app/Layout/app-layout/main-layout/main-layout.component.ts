@@ -12,4 +12,8 @@ export class MainLayoutComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onActive(){
+    window.scroll(0, 0);
+  }
+
 }

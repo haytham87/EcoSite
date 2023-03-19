@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FeatherModule } from "angular-feather";
 
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
@@ -22,6 +23,7 @@ import { WishlistComponent } from './wishlist/wishlist.component';
 
 import { MainRoutingModule } from './main-routing.module';
 import { MatTabsModule } from '@angular/material/tabs';
+import { DonePaymentComponent } from './done-payment/done-payment.component';
 
 
 
@@ -44,11 +46,13 @@ import { MatTabsModule } from '@angular/material/tabs';
     ShippingComponent,
     ShoppingCartComponent,
     TermsConditionsComponent,
-    WishlistComponent
+    WishlistComponent,
+    DonePaymentComponent
   ],
   imports: [
     MainRoutingModule,
     MatTabsModule,
+    FeatherModule,
     CommonModule
   ]
 })

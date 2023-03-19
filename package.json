@@ -26,6 +26,7 @@
     "@popperjs/core": "^2.10.2",
     "angular-feather": "^6.5.0",
     "bootstrap": "^5.2.0",
+    "pretty-checkbox": "^3.0.3",
     "rxjs": "~7.5.0",
     "swiper": "^6.8.1",
     "tslib": "^2.3.0",

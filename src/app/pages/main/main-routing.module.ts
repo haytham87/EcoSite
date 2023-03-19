@@ -1,3 +1,4 @@
+import { DonePaymentComponent } from './done-payment/done-payment.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutUsComponent } from './about-us/about-us.component';
@@ -74,6 +75,14 @@ const routes: Routes = [{
         {
             path: 'termsAndConditions',
             component: TermsConditionsComponent,
+        },
+        {
+            path: 'donePayment',
+            component: DonePaymentComponent
+        },
+        {
+            path: 'payment',
+            component: PaymentComponent
         },
         { path: '**', component: Page404Component }
     ]

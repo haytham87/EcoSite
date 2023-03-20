@@ -32,14 +32,14 @@ const routes: Routes = [{
             path: 'aboutUs',
             component: AboutUsComponent,
         },
-        {
-            path: 'allCategories',
-            component: AllCategoriesComponent,
-        },
-        {
-            path: 'appointment',
-            component: AppointmentComponent,
-        },
+        // {
+        //     path: 'allCategories',
+        //     component: AllCategoriesComponent,
+        // },
+        // {
+        //     path: 'appointment',
+        //     component: AppointmentComponent,
+        // },
         {
             path: 'article/:id',
             component: ArticleComponent,
@@ -49,7 +49,7 @@ const routes: Routes = [{
             component: BlogComponent,
         },
         {
-            path: 'category:/id',
+            path: 'category/:id',
             component: CategoryComponent,
         },
         {

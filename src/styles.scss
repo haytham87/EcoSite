@@ -1213,22 +1213,23 @@ footer {}
 /* [Home] */
 .screen {
     padding: 50px 0;
-    background: #fbfbfb;
+    background: #f5f5f5;
 }
+
 
 .category-home,
 .featured-offers-main1,
 .featured-offers-main2,
 .featured-offers-item {
-    background-color: #f6f7f8;
+    background-color: var(--white);
     border-radius: var(--border-radius-md);
     transition: var(--transition-timing);
-    cursor: pointer;
+    // cursor: pointer;
 
-    &:hover {
-        transition: var(--transition-timing);
-        opacity: 0.8;
-    }
+    // &:hover {
+    //     transition: var(--transition-timing);
+    //     opacity: 0.8;
+    // }
 }
 
 .category-home-main {
@@ -1268,8 +1269,105 @@ footer {}
     }
 }
 
-.featured-offers-main1,
-.featured-offers-item {
+.featured-offers-main1,  .featured-offers-item {
+    padding: 20px;
+}
+
+.featured-offers-main2 {
+    padding: 30px;
+    display: flex;
+    gap: 25px;
+}
+
+.featured-offers-main1 {
+    padding: 30px;
+    display: flex;
+    gap: 25px;
+}
+
+.featured-offers-main2 .item-spec-img {
+    height: 170px;
+}
+
+
+.actions-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    i-feather {
+        width: 15px;
+        height: 15px;
+    }
+
+    .add-cart {
+        color: var(--white);
+        padding: 10px;
+        transition: var(--transition-timing);
+        font-family: "Cairo-Medium";
+        background: var(--featureColor);
+        border-radius: 15px;
+
+        i-feather {
+            margin-right: 30px;
+        }
+
+        &:hover {opacity: 0.8;}
+    }
+
+    .add-whishlist {
+        padding: 10px;
+        background: #DDD;
+        transition: var(--transition-timing);
+        border-radius: 50%;
+
+        &:hover {opacity: 0.8;}
+    }
+}
+
+.item-img {
+    text-align: center;
+    margin-bottom: 10px;
+    height: 170px;
+
+    // img {
+    //     width: 80px;
+    //     height: 212px;
+    // }
+}
+
+.item-info {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: 'Cairo-Medium';
+
+    .companyName {
+        color: #b6b6b6;
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+.item-spec-info {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: 'Cairo-Medium';
+    width: -webkit-fill-available;
+
+    .companyName {
+        color: #b6b6b6;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .itemDes {
+        color: #b6b6b6;
+        margin-top: 5px; 
+        display: block;
+    }
+}
+
+.featured-offers-main1, .featured-offers-item {
     height: 400px;
 }
 
@@ -1289,6 +1387,11 @@ footer {}
     background-color: var(--light-feature);
     border-radius: var(--border-radius-md);
     height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--white)
 }
 
 .article-con {

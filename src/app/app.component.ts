@@ -13,7 +13,7 @@ export class AppComponent {
   ngOnInit(): void {
     setTimeout(()=> {
       this.loader=false
-    }, 8000)
+    }, 1000)
   }
   onActive(){
     window.scroll(0, 0);

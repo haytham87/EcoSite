@@ -7,294 +7,34 @@
         </div>
         <div class="blog">
             <div class="product-grid">
-                <div class="blog-card">
+                <div class="blog-card" *ngFor="let article of articles | paginate: { itemsPerPage: 8, currentPage: p, totalItems: 16}">
                     <a href="#">
-                        <img src="../../../../assets/images/blog/blog-1.jpg" alt="" width="300" class="blog-banner">
+                        <img [src]="article.cover" alt="" width="300" class="blog-banner">
                     </a>
 
                     <div class="blog-content">
-                        <a href="#" class="blog-category">العناية بالبشرة</a>
+                        <a href="#" class="blog-category">{{article.category}}</a>
 
                         <a href="#">
-                            <h3 class="blog-title">5 نصائح للحصول على بشرة صحية</h3>
+                            <h3 class="blog-title">{{article.title}}</h3>
                         </a>
 
                         <p class="blog-meta">
-                            بواسطة <cite>Mr Admin</cite> / <time datetime="2022-04-06">مارس 06, 2022</time>
-                          </p>
-                    </div>
-                </div>
-
-                <div class="blog-card">
-                    <a href="#">
-                        <img src="../../../../assets/images/blog/blog-2.jpg" alt="" width="300" class="blog-banner">
-                    </a>
-
-                    <div class="blog-content">
-                        <a href="#" class="blog-category">العناية بالبشرة</a>
-
-                        <a href="#">
-                            <h3 class="blog-title">5 نصائح للحصول على بشرة صحية</h3>
-                        </a>
-
-                        <p class="blog-meta">
-                            بواسطة <cite>Mr Admin</cite> / <time datetime="2022-04-06">مارس 06, 2022</time>
-                          </p>
-                    </div>
-                </div>
-
-                <div class="blog-card">
-                    <a href="#">
-                        <img src="../../../../assets/images/blog/blog-3.jpg" alt="" width="300" class="blog-banner">
-                    </a>
-
-                    <div class="blog-content">
-                        <a href="#" class="blog-category">العناية بالبشرة</a>
-
-                        <a href="#">
-                            <h3 class="blog-title">5 نصائح للحصول على بشرة صحية</h3>
-                        </a>
-
-                        <p class="blog-meta">
-                            بواسطة <cite>Mr Admin</cite> / <time datetime="2022-04-06">مارس 06, 2022</time>
-                          </p>
-                    </div>
-                </div>
-
-                <div class="blog-card">
-                    <a href="#">
-                        <img src="../../../../assets/images/blog/blog-4.jpg" alt="" width="300" class="blog-banner">
-                    </a>
-
-                    <div class="blog-content">
-                        <a href="#" class="blog-category">العناية بالبشرة</a>
-
-                        <a href="#">
-                            <h3 class="blog-title">5 نصائح للحصول على بشرة صحية</h3>
-                        </a>
-
-                        <p class="blog-meta">
-                            بواسطة <cite>Mr Admin</cite> / <time datetime="2022-04-06">مارس 06, 2022</time>
-                          </p>
-                    </div>
-                </div>
-
-                <div class="blog-card">
-                    <a href="#">
-                        <img src="../../../../assets/images/blog/blog-1.jpg" alt="" width="300" class="blog-banner">
-                    </a>
-
-                    <div class="blog-content">
-                        <a href="#" class="blog-category">العناية بالبشرة</a>
-
-                        <a href="#">
-                            <h3 class="blog-title">5 نصائح للحصول على بشرة صحية</h3>
-                        </a>
-
-                        <p class="blog-meta">
-                            بواسطة <cite>Mr Admin</cite> / <time datetime="2022-04-06">مارس 06, 2022</time>
-                          </p>
-                    </div>
-                </div>
-
-                <div class="blog-card">
-                    <a href="#">
-                        <img src="../../../../assets/images/blog/blog-2.jpg" alt="" width="300" class="blog-banner">
-                    </a>
-
-                    <div class="blog-content">
-                        <a href="#" class="blog-category">العناية بالبشرة</a>
-
-                        <a href="#">
-                            <h3 class="blog-title">5 نصائح للحصول على بشرة صحية</h3>
-                        </a>
-
-                        <p class="blog-meta">
-                            بواسطة <cite>Mr Admin</cite> / <time datetime="2022-04-06">مارس 06, 2022</time>
-                          </p>
-                    </div>
-                </div>
-
-                <div class="blog-card">
-                    <a href="#">
-                        <img src="../../../../assets/images/blog/blog-3.jpg" alt="" width="300" class="blog-banner">
-                    </a>
-
-                    <div class="blog-content">
-                        <a href="#" class="blog-category">العناية بالبشرة</a>
-
-                        <a href="#">
-                            <h3 class="blog-title">5 نصائح للحصول على بشرة صحية</h3>
-                        </a>
-
-                        <p class="blog-meta">
-                            بواسطة <cite>Mr Admin</cite> / <time datetime="2022-04-06">مارس 06, 2022</time>
-                          </p>
-                    </div>
-                </div>
-
-                <div class="blog-card">
-                    <a href="#">
-                        <img src="../../../../assets/images/blog/blog-4.jpg" alt="" width="300" class="blog-banner">
-                    </a>
-
-                    <div class="blog-content">
-                        <a href="#" class="blog-category">العناية بالبشرة</a>
-
-                        <a href="#">
-                            <h3 class="blog-title">5 نصائح للحصول على بشرة صحية</h3>
-                        </a>
-
-                        <p class="blog-meta">
-                            بواسطة <cite>Mr Admin</cite> / <time datetime="2022-04-06">مارس 06, 2022</time>
-                          </p>
-                    </div>
-                </div>
-
-                <div class="blog-card">
-                    <a href="#">
-                        <img src="../../../../assets/images/blog/blog-1.jpg" alt="" width="300" class="blog-banner">
-                    </a>
-
-                    <div class="blog-content">
-                        <a href="#" class="blog-category">العناية بالبشرة</a>
-
-                        <a href="#">
-                            <h3 class="blog-title">5 نصائح للحصول على بشرة صحية</h3>
-                        </a>
-
-                        <p class="blog-meta">
-                            بواسطة <cite>Mr Admin</cite> / <time datetime="2022-04-06">مارس 06, 2022</time>
-                          </p>
-                    </div>
-                </div>
-
-                <div class="blog-card">
-                    <a href="#">
-                        <img src="../../../../assets/images/blog/blog-2.jpg" alt="" width="300" class="blog-banner">
-                    </a>
-
-                    <div class="blog-content">
-                        <a href="#" class="blog-category">العناية بالبشرة</a>
-
-                        <a href="#">
-                            <h3 class="blog-title">5 نصائح للحصول على بشرة صحية</h3>
-                        </a>
-
-                        <p class="blog-meta">
-                            بواسطة <cite>Mr Admin</cite> / <time datetime="2022-04-06">مارس 06, 2022</time>
-                          </p>
-                    </div>
-                </div>
-
-                <div class="blog-card">
-                    <a href="#">
-                        <img src="../../../../assets/images/blog/blog-3.jpg" alt="" width="300" class="blog-banner">
-                    </a>
-
-                    <div class="blog-content">
-                        <a href="#" class="blog-category">العناية بالبشرة</a>
-
-                        <a href="#">
-                            <h3 class="blog-title">5 نصائح للحصول على بشرة صحية</h3>
-                        </a>
-
-                        <p class="blog-meta">
-                            بواسطة <cite>Mr Admin</cite> / <time datetime="2022-04-06">مارس 06, 2022</time>
-                          </p>
-                    </div>
-                </div>
-
-                <div class="blog-card">
-                    <a href="#">
-                        <img src="../../../../assets/images/blog/blog-4.jpg" alt="" width="300" class="blog-banner">
-                    </a>
-
-                    <div class="blog-content">
-                        <a href="#" class="blog-category">العناية بالبشرة</a>
-
-                        <a href="#">
-                            <h3 class="blog-title">5 نصائح للحصول على بشرة صحية</h3>
-                        </a>
-
-                        <p class="blog-meta">
-                            بواسطة <cite>Mr Admin</cite> / <time datetime="2022-04-06">مارس 06, 2022</time>
-                          </p>
-                    </div>
-                </div>
-
-                <div class="blog-card">
-                    <a href="#">
-                        <img src="../../../../assets/images/blog/blog-1.jpg" alt="" width="300" class="blog-banner">
-                    </a>
-
-                    <div class="blog-content">
-                        <a href="#" class="blog-category">العناية بالبشرة</a>
-
-                        <a href="#">
-                            <h3 class="blog-title">5 نصائح للحصول على بشرة صحية</h3>
-                        </a>
-
-                        <p class="blog-meta">
-                            بواسطة <cite>Mr Admin</cite> / <time datetime="2022-04-06">مارس 06, 2022</time>
-                          </p>
-                    </div>
-                </div>
-
-                <div class="blog-card">
-                    <a href="#">
-                        <img src="../../../../assets/images/blog/blog-2.jpg" alt="" width="300" class="blog-banner">
-                    </a>
-
-                    <div class="blog-content">
-                        <a href="#" class="blog-category">العناية بالبشرة</a>
-
-                        <a href="#">
-                            <h3 class="blog-title">5 نصائح للحصول على بشرة صحية</h3>
-                        </a>
-
-                        <p class="blog-meta">
-                            بواسطة <cite>Mr Admin</cite> / <time datetime="2022-04-06">مارس 06, 2022</time>
-                          </p>
-                    </div>
-                </div>
-
-                <div class="blog-card">
-                    <a href="#">
-                        <img src="../../../../assets/images/blog/blog-3.jpg" alt="" width="300" class="blog-banner">
-                    </a>
-
-                    <div class="blog-content">
-                        <a href="#" class="blog-category">العناية بالبشرة</a>
-
-                        <a href="#">
-                            <h3 class="blog-title">5 نصائح للحصول على بشرة صحية</h3>
-                        </a>
-
-                        <p class="blog-meta">
-                            بواسطة <cite>Mr Admin</cite> / <time datetime="2022-04-06">مارس 06, 2022</time>
-                          </p>
-                    </div>
-                </div>
-
-                <div class="blog-card">
-                    <a href="#">
-                        <img src="../../../../assets/images/blog/blog-4.jpg" alt="" width="300" class="blog-banner">
-                    </a>
-
-                    <div class="blog-content">
-                        <a href="#" class="blog-category">العناية بالبشرة</a>
-
-                        <a href="#">
-                            <h3 class="blog-title">5 نصائح للحصول على بشرة صحية</h3>
-                        </a>
-
-                        <p class="blog-meta">
-                            بواسطة <cite>Mr Admin</cite> / <time datetime="2022-04-06">مارس 06, 2022</time>
+                            بواسطة <cite>{{article.author}}</cite> / <time datetime="2022-04-06">{{article.date}}</time>
                           </p>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="pagination-container">
+            <pagination-controls
+            (pageChange)="p = $event"
+            [maxSize]="9"
+            previousLabel=""
+            nextLabel=""
+          >
+          </pagination-controls>
         </div>
     </div>
 </div>

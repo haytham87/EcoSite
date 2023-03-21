@@ -26,6 +26,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { DonePaymentComponent } from './done-payment/done-payment.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 
@@ -55,6 +56,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MainRoutingModule,
     MatTabsModule,
     FormsModule, ReactiveFormsModule,
+    NgxPaginationModule,
     FeatherModule,
     CommonModule
   ]

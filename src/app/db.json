@@ -1,0 +1,132 @@
+{
+    "articlesData": [
+        {
+            "id": 1,
+            "cover": "../assets/images/blog/blog-1.jpg",
+            "category": "العناية بالبشرة",
+            "title": "5 نصائح للحصول على بشرة صحية",
+            "author": "Mr Admin",
+            "date": "2022-04-06"
+        },
+        {
+            "id": 2,
+            "cover": "../assets/images/blog/blog-2.jpg",
+            "category": "العناية بالبشرة",
+            "title": "5 نصائح للحصول على بشرة صحية",
+            "author": "Mr Admin",
+            "date": "2022-04-06"
+        },
+        {
+            "id": 3,
+            "cover": "../assets/images/blog/blog-3.jpg",
+            "category": "العناية بالبشرة",
+            "title": "5 نصائح للحصول على بشرة صحية",
+            "author": "Mr Admin",
+            "date": "2022-04-06"
+        },
+        {
+            "id": 4,
+            "cover": "../assets/images/blog/blog-4.jpg",
+            "category": "العناية بالبشرة",
+            "title": "5 نصائح للحصول على بشرة صحية",
+            "author": "Mr Admin",
+            "date": "2022-04-06"
+        },
+        {
+            "id": 5,
+            "cover": "../assets/images/blog/blog-1.jpg",
+            "category": "العناية بالبشرة",
+            "title": "5 نصائح للحصول على بشرة صحية",
+            "author": "Mr Admin",
+            "date": "2022-04-06"
+        },
+        {
+            "id": 6,
+            "cover": "../assets/images/blog/blog-2.jpg",
+            "category": "العناية بالبشرة",
+            "title": "5 نصائح للحصول على بشرة صحية",
+            "author": "Mr Admin",
+            "date": "2022-04-06"
+        },
+        {
+            "id": 7,
+            "cover": "../assets/images/blog/blog-3.jpg",
+            "category": "العناية بالبشرة",
+            "title": "5 نصائح للحصول على بشرة صحية",
+            "author": "Mr Admin",
+            "date": "2022-04-06"
+        },
+        {
+            "id": 8,
+            "cover": "../assets/images/blog/blog-4.jpg",
+            "category": "العناية بالبشرة",
+            "title": "5 نصائح للحصول على بشرة صحية",
+            "author": "Mr Admin",
+            "date": "2022-04-06"
+        },
+        {
+            "id": 9,
+            "cover": "../assets/images/blog/blog-1.jpg",
+            "category": "العناية بالبشرة",
+            "title": "5 نصائح للحصول على بشرة صحية",
+            "author": "Mr Admin",
+            "date": "2022-04-06"
+        },
+        {
+            "id": 10,
+            "cover": "../assets/images/blog/blog-2.jpg",
+            "category": "العناية بالبشرة",
+            "title": "5 نصائح للحصول على بشرة صحية",
+            "author": "Mr Admin",
+            "date": "2022-04-06"
+        },
+        {
+            "id": 11,
+            "cover": "../assets/images/blog/blog-3.jpg",
+            "category": "العناية بالبشرة",
+            "title": "5 نصائح للحصول على بشرة صحية",
+            "author": "Mr Admin",
+            "date": "2022-04-06"
+        },
+        {
+            "id": 12,
+            "cover": "../assets/images/blog/blog-4.jpg",
+            "category": "العناية بالبشرة",
+            "title": "5 نصائح للحصول على بشرة صحية",
+            "author": "Mr Admin",
+            "date": "2022-04-06"
+        },
+        {
+            "id": 13,
+            "cover": "../assets/images/blog/blog-1.jpg",
+            "category": "العناية بالبشرة",
+            "title": "5 نصائح للحصول على بشرة صحية",
+            "author": "Mr Admin",
+            "date": "2022-04-06"
+        },
+        {
+            "id": 14,
+            "cover": "../assets/images/blog/blog-2.jpg",
+            "category": "العناية بالبشرة",
+            "title": "5 نصائح للحصول على بشرة صحية",
+            "author": "Mr Admin",
+            "date": "2022-04-08"
+        },
+        {
+            "id": 15,
+            "cover": "../assets/images/blog/blog-3.jpg",
+            "category": "العناية بالبشرة",
+            "title": "5 نصائح للحصول على بشرة صحية",
+            "author": "Mr Admin",
+            "date": "2022-04-08"
+        },
+        {
+            "id": 16,
+            "cover": "../assets/images/blog/blog-4.jpg",
+            "category": "العناية بالبشرة",
+            "title": "5 نصائح للحصول على بشرة صحية",
+            "author": "Mr Admin",
+            "date": "2022-04-10"
+        }
+    ]
+}

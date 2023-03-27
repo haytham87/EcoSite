@@ -1,10 +1,8 @@
+import { Page500Component } from './page500/page500.component';
 import { DonePaymentComponent } from './done-payment/done-payment.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutUsComponent } from './about-us/about-us.component';
-import { AccountSettingsComponent } from './account-settings/account-settings.component';
-import { AllCategoriesComponent } from './all-categories/all-categories.component';
-import { AppointmentComponent } from './appointment/appointment.component';
 import { ArticleComponent } from './article/article.component';
 import { BlogComponent } from './blog/blog.component';
 import { CategoryComponent } from './category/category.component';
@@ -19,7 +17,6 @@ import { ProductComponent } from './product/product.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { TermsConditionsComponent } from './terms-conditions/terms-conditions.component';
-import { WishlistComponent } from './wishlist/wishlist.component';
 
 const routes: Routes = [{
     path: '',
@@ -32,14 +29,6 @@ const routes: Routes = [{
             path: 'aboutUs',
             component: AboutUsComponent,
         },
-        // {
-        //     path: 'allCategories',
-        //     component: AllCategoriesComponent,
-        // },
-        // {
-        //     path: 'appointment',
-        //     component: AppointmentComponent,
-        // },
         {
             path: 'article/:id',
             component: ArticleComponent,
@@ -83,6 +72,10 @@ const routes: Routes = [{
         {
             path: 'payment',
             component: PaymentComponent
+        },
+        {
+            path: 'page500',
+            component: Page500Component
         },
         { path: '**', component: Page404Component }
     ]

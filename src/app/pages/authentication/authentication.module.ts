@@ -1,3 +1,4 @@
+import { TestProductComponent } from './test-product/test-product.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -12,7 +13,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     declarations: [
         SigninComponent,
         SignupComponent,
-        ForgetPasswordComponent
+        ForgetPasswordComponent,
+        TestProductComponent
     ],
     imports: [
         AuthenticationRoutingModule,

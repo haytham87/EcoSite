@@ -364,7 +364,7 @@ button {
 
 /****************************** RTL ******************************/
 .rtl {
-    direction: rtl;
+    // direction: rtl;
     text-align: right;
 }
 
@@ -3170,6 +3170,11 @@ body::-webkit-scrollbar-thumb:hover {
     padding: 6px 12px !important;
     background: var(--featureColor) !important;
     transition: var(--transition-timing);
+}
+
+/* [Product Page] */
+.product-detail-section {
+    margin: 20px 0;
 }
 
 @import '~pretty-checkbox/src/pretty-checkbox.scss';

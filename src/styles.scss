@@ -364,7 +364,7 @@ button {
 
 /****************************** RTL ******************************/
 .rtl {
-    // direction: rtl;
+    direction: rtl;
     text-align: right;
 }
 
@@ -2716,17 +2716,22 @@ button {
     color: var(--eerie-black);
 }
 
-.product-grid .showcase-rating {
+.rating .showcase-rating i-feather {width: 18px;height: 18px;}
+
+.product-grid .showcase-rating,
+.rating .showcase-rating {
     display: flex;
     color: var(--featureColor);
     margin-bottom: 10px;
 }
 
-.product-grid .showcase-rating .fillstar {
+.product-grid .showcase-rating .fillstar,
+.rating .showcase-rating .fillstar{
     fill: var(--featureColor) !important;
 }
 
-.showcase-content .fillstar {
+.showcase-content .fillstar,
+.rating .showcase-rating .fillstar {
     fill: var(--featureColor) !important;
 }
 
@@ -3175,6 +3180,89 @@ body::-webkit-scrollbar-thumb:hover {
 /* [Product Page] */
 .product-detail-section {
     margin: 20px 0;
+}
+
+.single-des, .rating-des, .avg-ratting span {
+    font-family: 'Cairo-SemiBold';
+}
+
+.shop.single .single-des ul{}
+.shop.single .single-des ul li {
+	color: #555;
+	display: block;
+	margin-bottom: 10px;
+	position:relative;
+	padding-right:20px;
+}
+
+.shop.single .single-des ul li::before {
+	position: absolute;
+	content: "";
+	right: 0;
+	top: 9px;
+	height: 7px;
+	width: 7px;
+	background: var(--featureColor);
+	border-radius: 50%;
+}
+
+.shop.single .flex-control-thumbs li img.flex-active{
+	border-color:var(--featureColor);
+}
+
+.from-review {margin-top: 15px; font-family: 'Cairo-SemiBold';}
+.from-review span {
+    color: var(--featureColor) !important;
+}
+
+.shop.single .product-des .total-review{
+	font-size:14px;
+	font-weight:500;
+	margin-right:10px;
+	display:inline-block;
+}
+.shop.single .product-des .total-review:hover{
+	color:var(--featureColor);
+}
+
+.shop.single .product-des .price span{
+	display:inline-block;
+	margin-left:15px;
+	color:var(--featureColor);
+}
+
+.shop.single .add-to-cart .btn {
+	height: 45px;
+	width: auto;
+	padding: 0 42px;
+	line-height: 45px;
+	text-align: center;
+	text-transform: capitalize;
+	margin-right: 5px;
+	border-radius: 0px;
+	background: #333;
+	color: #fff;
+	display: inline-block;
+	font-weight: 500;
+}
+.shop.single .add-to-cart .btn:hover{
+	color:#fff;
+	background:var(--featureColor);
+}
+
+.shop.single .quantity .button .btn {
+	padding: 0;
+	width: 35px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 0px;
+	background: transparent;
+	color: #282828;
+	font-size: 12px;
+	border: none;
+}
+.shop.single .quantity .button .btn:hover{
+	color:var(--featureColor);
 }
 
 @import '~pretty-checkbox/src/pretty-checkbox.scss';

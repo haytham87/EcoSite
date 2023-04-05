@@ -740,7 +740,7 @@ Version:1.0
 	padding: 17px 20px 17px 107px;
 }
 .shop.single .form .form-group button {
-	padding: 14px 40px;
+	/* padding: 14px 40px; */
 }
 .cown-down {
 	height: auto;

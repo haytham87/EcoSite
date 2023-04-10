@@ -1,4 +1,3 @@
-import { TestProductComponent } from '../authentication/test-product/test-product.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -20,10 +19,6 @@ const routes: Routes = [{
         {
             path: 'forgetPassword',
             component: ForgetPasswordComponent,
-        },
-        {
-            path: 'test',
-            component: TestProductComponent
         },
     ]
 }]

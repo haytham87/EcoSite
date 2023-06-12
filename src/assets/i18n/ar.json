@@ -1,0 +1,238 @@
+{
+    "HEADER": {
+        "SEARCH": "بحث ...",
+        "WELCOME": "مرحبا",
+        "Notifications": "التنبيهات",
+        "View All": "مشاهدة الجميع",
+        "NOTIFICATIONS": {
+            "TITLE": "التنبيهات",
+            "VIEW_ALL": "مشاهدة الجميع",
+            "LOAD_MORE": "مشاهدة المزيد",
+            "FIRST": {
+                "TITLE": "التنبيه الأول",
+                "TEXT": "تنبيه تمت كتابته",
+                "TIME": "منذ 3 دقائق"
+            },
+            "SECOND": {
+                "TITLE": "التنبيه الأول",
+                "TEXT": "تنبيه تمت كتابته",
+                "TIME": "منذ 1 ساعه"
+            }
+        },
+        "EXTRA_PAGES": {
+            "TITLE": "الصفحات الرئيسية"
+        },
+        "LOGIN": {
+            "PROFILE": "الملف الشخصي",
+            "MESSAGES": "الرسائل",
+            "LOGOUT": "تسجيل الخروج"
+        }
+    },
+    "ThemeCustomizer": "تغير الشكل العام",
+    "RIGHTSIDEBAR": {
+        "LAYOUT": {
+            "TEXT": "شكل القائمة",
+            "LIST": {
+                "VERTICAL": "رأسي",
+                "HORIZONTAL": "أفقي"
+            }
+        },
+        "LAYOUTMODE": {
+            "TEXT": "شكل النظام",
+            "LIST": {
+                "LIGHT": "مضئ",
+                "DARK": "معتم"
+            }
+        },
+        "LAYOUTWIDTH": {
+            "TEXT": "حجم النظام",
+            "LIST": {
+                "FLUID": "واسع",
+                "BOXED": "مضبوط"
+            }
+        },
+        "LAYOUTPOSITION": {
+            "TEXT": "مكان القائمة",
+            "LIST": {
+                "FIXED": "متحركة",
+                "SCROLLABLE": "ثابتة"
+            }
+        },
+        "TOPBARCOLOR": {
+            "TEXT": "لون القائمة العلوية",
+            "LIST": {
+                "LIGHT": "ابيض",
+                "DARK": "اسود"
+            }
+        },
+        "SIDEBARSIZE": {
+            "TEXT": "حجم القائمة الجانبية",
+            "LIST": {
+                "DEFAULT": "عادي",
+                "COMPACT": "مدمج",
+                "SMALL": "صغير"
+            }
+        },
+        "SIDEBARCOLOR": {
+            "TEXT": "لون القائمة الجانبية",
+            "LIST": {
+                "LIGHT": "ابيض",
+                "DARK": "اسود",
+                "BRAND": "ازرق"
+            }
+        }
+    },
+    "MENUITEMS": {
+        "MENU": {
+            "TEXT": "المعلومات العامه"
+        },
+        "DASHBOARDS": {
+            "TEXT": "اللوحه الرئيسية"
+        },
+        "HR": {
+          "TEXT": "موارد بشرية",
+          "LIST": {
+            "PAGES": "الصفحات",
+            "SETTINGS":"الاعدادات",
+            "REPORTS":"التقارير",
+            "EMPLOYEEREPORT":"بيانات الموظفين",
+            "ACCONTREPORT":"بيانات الحسابات",
+            "STORE":"المخازن",
+            "Enterprise":"المؤسسة",
+            "BRANCH":"الفروع",
+            "MANAGEMENTS":"الإدارات",
+            "JobApplication":"التقدم لوظيفة",
+            "SUB": {
+              "INBOX": "انبوكس",
+              "READEMAIL": "البريد الالكتروني"
+            }
+          }
+        }
+    },
+    "toastrMsg":{
+        "youAreLoggedInSuccessfully":"مرحبا بك -- تم تسجيل دخولك بنجاح"
+    },
+    "welcomeBack":" مرحباً بك مجدداً",
+    "lookForEmail":"البحث عن ايميل المستخدم",
+    "areYouForgetPass":"هل نسيت كلمة المرور؟",
+    "chcekCodeVerifi":"التحقق من الكود",
+    "noUserFound":"لا يوجد مستخدم لهذا البريد برجاء التحقق من البريد المدخل",
+    "rightCodePleasTypeNewPass":"الكود المسجل صحيح برجاء كتابة كلمة مرور جديدة",
+    "passChangedSuccess":"تم تغيير كلمة المرور بنجاخ ",
+    "verificationCode":"كود التحقق",
+    "changePassword":"تغيير كلمة المرور",
+    "thisCodeExist":"هذا الكود مسجل من قبل برجاء تحقق من الكود مره اخري",
+    "actions":"الإجراءات",
+    "description":"الوصف",
+    "roleData":"ٌبيانات المجموعة",
+    "add":"إضافة",
+    "edit":"تعديل",
+    "delete":"حذف",
+    "view":"عرض",
+    "search":"بحث",
+    "save":"حفظ",
+    "cancel":"إلغاء",
+    "back":"عودة",
+    "related":"لايمكن حذف العنصر لارتباطه ببيانات اخري",
+    "SavedSuccess":"تم الحفظ بنجاح",
+    "LookUps":"تعريفات عامه",
+    "Organization":"المؤسسة",
+    "Mamagements":"الإدارات",
+    "Departments":"الأقسام",
+    "Jobs":"الوظائف",
+    "code":"الكود",
+    "name":"الإسم",
+    "nameAr":"الإسم بالعربى",
+    "nameEn":"الإسم بالانجليزي",
+    "parent":"تابع إلى",
+    "placeholderSelect":"إختر",
+    "required":"حقل مطلوب",
+    "Categories":"فئات الاصناف",
+    "Items":"الأصناف",
+    "Brands":"الماركات",
+    "Groups":"المجموعات",
+    "Users":"المستخدمين",
+    "confirm delete":"هل انت متاكد من الحذف",
+    "deletedDone":"تم الحذف بنجاح",
+    "selectElementFirst":"قم باختيار عنصر اولأ",
+    "addImage":"إضافة صورة",
+    "Category":{
+        "name":"إسم الفئة",
+        "photo":"",
+        "mainPhoto":"الرئيسية",
+        "Category":"بيانات الفئة",
+        "uploadImage":"صورة للفئة",
+        "mainCate":"الفئة الرئيسية",
+        "code":"كود الفئة",
+        "relatedCat":"هذه الفئة مرتبطة بيانات اخري لايمكن حذفها"
+    },
+    "ItemPhoto":{
+        "mainPic":"هذه هي الصورة الرئيسية اختر صورة اخري قبل الحذف"
+    },
+    "security": {
+        "userTitle": "المستخدمين",
+        "roleTitle": "المجموعات",
+        "info": "البيانات",
+        "code": "الكود",
+        "nameAr": "الاسم بالعربي",
+        "nameEn": "الاسم بالإنجليزي",
+        "description": "الوصف",
+        "name": "الاسم",
+        "userName": "اسم المستخدم",
+        "password": "كلمة المرور",
+        "newPassword":"كلمة المرور الجديدة",
+        "Confirmpassword":"تاكيد كلمة المرور",
+        "login":"تسجيل الدخول",
+        "email": "البريد الالكتروني",
+        "mobile": "رقم الجوال",
+        "isActive": "الحالة",
+        "allowRefuse": "إمكانية الرفض",
+        "roles": "المجموعات",
+        "permissions": "صلاحيات القوائم",
+        "userRoles": "مجموعات المستخدمين",
+        "rolePermissions": "صلاحيات المجموعات",
+        "menuTitle": "القوائم",
+        "userType": "نوع المستخدم",
+        "nickName":"الإسم المستعار",
+        "users": "المستخدمين",
+        "addUsers": "إضافة مستخدم لجهة الاختصاص",
+        "orgType": "نوع جهة الاختصاص",
+        "personTypes": "الفئات المستفيدة",
+        "personType":"الفئة",
+        "rank": "الرتبة",
+        "unit": "الإدارة",
+        "organization": "الجهة المختصة",
+        "organizationType":"نوع المجموعة",
+        "screens":"صلاحية الإجراءات",
+        "requestTypes":"نوع الطلب",
+        "requestStatus":"نوع المجموعه",
+        "identityNo":"رقم الهوية",
+        "isDisabled":"غير مفعل",
+        "screensAndRole": "صلاحيات القوائم و الشاشات",
+        "persons": "المندوبين",
+        "addPerson": "هذا الشخص غير موجود يمكنك إضافته كمندوب",
+        "allowPrint": "موافقة الطباعه",
+        "userData":"بيانات المستخدم",
+        "passNotMatch":"كلمة المرور غير متطابقة",
+        "confirmPass":"مطابقة كلمة المرور"
+      } ,
+      "item":{
+        "name":"الإسم",
+        "code":"الكود",
+        "Category":"الفئة",
+        "brand":"الماركة",
+        "sample":"عينة",
+        "addItem":"إضافة صنف",
+        "editItem":"تعديل صنف",
+        "parentItem":"الصنف التابع له",
+        "parentSameId":"الصنف المختار هو نفس الصنف اختر صنف اخر",
+        "stopUseItem":"إيقاف التعامل بالصنف",
+        "confirmStop":"هل انت متاكد من ايقاف التعامل مع الصنف!",
+        "stopedDone":"تم ايقاف التعامل مع الصنف بنجاح",
+        "isStop":"ايقاف الصنف",
+        "thisItemStoped":"هذا الصنف موقوف لايمكن اختياره",
+        "UnstopUseItem":"إعادة التعامل مع الصنف",
+        "confirmUnStop":"هل انت متاكد من اعادة العمل بالصنف",
+        "unStopDone":"تم إعادة الصنف بنجاح"
+      }
+}

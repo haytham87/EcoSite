@@ -11,7 +11,8 @@ export class ArticlesService {
 
   constructor(private http: HttpClient) { }
 
-  getArticles():Observable<Articles[]>{
-    return this.http.get<Articles[]>(`${environment.URL}/articlesData`)
-  }
+  // getArticles():Observable<Articles[]>{
+  //   // return this.http.get<Articles[]>(`${environment.URL}/articlesData`)
+  //   return 'sfs'
+  // }
 }

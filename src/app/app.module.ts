@@ -12,21 +12,19 @@ import { AdsNavbarComponent } from './Layout/ads-navbar/ads-navbar.component';
 import { NavbarComponent } from './Layout/navbar/navbar.component';
 import { SubNavbarComponent } from './Layout/sub-navbar/sub-navbar.component';
 import { FooterComponent } from './Layout/footer/footer.component';
-
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { FeatherModule } from "angular-feather";
 import { allIcons } from "angular-feather/icons";
 
 
-import {
-  HttpClientModule,
-  HTTP_INTERCEPTORS,
-  HttpClient
-} from '@angular/common/http';
-
-import { environment } from 'src/environments/environment';
 import { MatTabsModule } from '@angular/material/tabs';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+export function createTranslateLoader(http: HttpClient): any {
+  return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -49,6 +47,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     CoreModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: createTranslateLoader,
+        deps: [HttpClient]
+      }
+    })
 
   ],
   providers: [],

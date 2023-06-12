@@ -74,6 +74,10 @@ const routes: Routes = [{
             component: PaymentComponent
         },
         {
+            path:'cart',
+            component:ShoppingCartComponent
+        },
+        {
             path: 'page500',
             component: Page500Component
         },

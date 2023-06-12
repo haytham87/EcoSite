@@ -1,0 +1,317 @@
+{
+   
+  "HEADER": {
+    "SEARCH": "Search...",
+    "WELCOME": "Welcome!",
+    "Notifications": "Notifications",
+    "View All": "View All",
+    "NOTIFICATIONS": {
+      "TITLE": "Notifications",
+      "VIEW_ALL": "View All",
+      "LOAD_MORE": "View More..",
+      "FIRST": {
+        "TITLE": "Notificayion one",
+        "TEXT": "Static Notification",
+        "TIME": "3 min ago"
+      },
+      "SECOND": {
+        "TITLE": "Notificayion two",
+        "TEXT": "Static Notification",
+        "TIME": "1 hours ago"
+      }
+    },
+    "EXTRA_PAGES": {
+      "TITLE": "Extra Pages"
+    },
+    "LOGIN": {
+      "PROFILE": "Profile",
+      "MESSAGES": "Messages",
+      "LOGOUT": "Logout"
+    }
+  },
+  "ThemeCustomizer": "Theme Customizer",
+  "RIGHTSIDEBAR": {
+    "LAYOUT": {
+      "TEXT": "Layout",
+      "LIST": {
+        "VERTICAL": "Vertical",
+        "HORIZONTAL": "Horizontal"
+      }
+    },
+    "LAYOUTMODE": {
+      "TEXT": "Layout Mode",
+      "LIST": {
+        "LIGHT": "Light",
+        "DARK": "Dark"
+      }
+    },
+    "LAYOUTWIDTH": {
+      "TEXT": "Layout Width",
+      "LIST": {
+        "FLUID": "Fluid",
+        "BOXED": "Boxed"
+      }
+    },
+    "LAYOUTPOSITION": {
+      "TEXT": "Layout Position",
+      "LIST": {
+        "FIXED": "Fixed",
+        "SCROLLABLE": "Scrollable"
+      }
+    },
+    "TOPBARCOLOR": {
+      "TEXT": "Topbar Color",
+      "LIST": {
+        "LIGHT": "Light",
+        "DARK": "Dark"
+      }
+    },
+    "SIDEBARSIZE": {
+      "TEXT": "Sidebar Size",
+      "LIST": {
+        "DEFAULT": "Default",
+        "COMPACT": "Compact",
+        "SMALL": "Small"
+      }
+    },
+    "SIDEBARCOLOR": {
+      "TEXT": "Sidebar Color",
+      "LIST": {
+        "LIGHT": "Light",
+        "DARK": "Dark",
+        "BRAND": "Brand"
+      }
+    }
+  },
+  "MENUITEMS": {
+    "MENU": {
+      "TEXT": "Menu"
+    },
+    "DASHBOARDS": {
+      "TEXT": "Dashboard"
+    },
+    "HR": {
+      "TEXT": "Human Resources",
+      "LIST": {
+        "PAGES": "Pages",
+        "SETTINGS":"Settings",
+        "REPORTS":"Reports",
+        "EMPLOYEEREPORT":"Employee Reports",
+        "ACCONTREPORT":"Account Reports",
+        "STORE":"Store",
+        "Enterprise":"Enterprise",
+        "BRANCH":"Branch",
+        "MANAGEMENTS":"Mangments",
+        "JobApplication":"Job Application",
+        "SUB": {
+          "INBOX": "Inbox",
+          "READEMAIL": "Read Email"
+        }
+      }
+    },
+    "AUTHENTICATION": {
+      "TEXT": "Authentication",
+      "BADGE": "New",
+      "LIST": {
+        "LOGIN": "Login",
+        "LOGIN1": "Login1",
+        "REGISTER": "Register",
+        "REGISTER1": "Register1",
+        "RECOVERPWD": "Recover Password",
+        "RECOVERPWD1": "Recover Password1",
+        "LOCKSCREEN": "Lock screen",
+        "CONFIRMMAIL": "Confirm Mail",
+        "EMAILVERIFICATION": "Email verification",
+        "TWOSTEPVERIFICATION": "Two step verification"
+      }
+    },
+    "PAGES": {
+      "TEXT": "Pages",
+      "LIST": {
+        "STARTER": "Starter Page",
+        "PROFILE": "Profile",
+        "INVOICE": "Invoice",
+        "MAINTENANCE": "Maintenance",
+        "COMINGSOON": "Comingsoon",
+        "TIMELINE": "Timeline",
+        "PRICING": "Pricing",
+        "ERROR404": "Error 404",
+        "ERROR500": "Error 500"
+      }
+    },
+    "ADMINKIT": {
+      "TEXT": "Admin Kit"
+    },
+    "UIELEMENTS": {
+      "TEXT": "UI Elements"
+    },
+    "ADVANCEDKIT": {
+      "TEXT": "Advanced Kit",
+      "LIST": {
+        "SWEETALERT": "Sweet Alert",
+        "RANGESLIDER": "Range Slider",
+        "NOTIFICATIONS": "Notifications",
+        "CAROUSEL": "Carousel"
+      }
+    },
+    "TYPOGRAPHY": {
+      "TEXT": "Typography"
+    },
+    "FORMS": {
+      "TEXT": "Forms",
+      "BADGE": "09",
+      "LIST": {
+        "ELEMENTS": "Form Elements",
+        "ADVANCED": "Form Advanced"
+      }
+    },
+    "TABLES": {
+      "TEXT": "Tables",
+      "LIST": {
+        "BASIC": "Bootstrap Tables",
+        "ADVANCED": "Data Tables"
+      }
+    },
+    "CHARTS": {
+      "TEXT": "Charts"
+    },
+    "ICONS": {
+      "TEXT": "Icons",
+      "LIST": {
+        "BOXICONS": "Boxicons",
+        "MATERIALDESIGN": "Material Design",
+        "DRIPICONS": "Dripicons",
+        "FONTAWESOME": "Font Awesome"
+      }
+    },
+    "MAPS": {
+      "TEXT": "Maps"
+    },
+    "MULTILEVEL": {
+      "TEXT": "Multi Level",
+      "LIST": {
+        "LEVEL1": {
+          "1": "Level 1.1",
+          "2": "Level 1.2",
+          "LEVEL2": {
+            "1": "Level 2.1",
+            "2": "Level 2.2"
+          }
+        }
+      }
+    }
+
+  },
+  "toastrMsg":{
+    "youAreLoggedInSuccessfully":"Welcome -- you are logged in Successfully"
+},
+"welcomeBack":"Welcome Back",
+"lookForEmail":"Looking for user By Email",
+    "areYouForgetPass":"are you forget your password",
+    "chcekCodeVerifi":"verificaty code",
+  "noUserFound":"Not found any User by this Email please Check again",
+  "rightCodePleasTypeNewPass":"you entred right code please type new Password",
+  "passChangedSuccess":"Passwrod Has Changed Successfully",
+  "verificationCode":"Verification Code",
+  "changePassword":"Changed Password",
+  "thisCodeExist":"This Code Exist Please Check again",
+  "actions":"actions",
+  "description":"description",
+  "roleData":"Role Data",
+  "add":"add",
+  "edit":"edit",
+  "delete":"delete",
+  "view":"view",
+  "search":"search",
+  "save":"save",
+  "cancel":"cancel",
+  "back":"Back",
+  "related":"can`t delete this becouse related with another data" ,
+  "SavedSuccess":"Saved Successfully",
+  "LookUps":"general defintions",
+  "Organization":"Organization",
+  "Mamagements":"Mamagements",
+  "Departments":"Departments",
+  "code":"Code",
+  "name":"Name",
+  "nameAr":"name in arabic",
+  "nameEn":"name in English",
+  "parent":"parent",
+  "placeholderSelect":"Choose",
+  "required":"Required Field",
+  "Categories":"Categories",
+    "Items":"Items",
+    "Brands":"Brands",
+    "Groups":"Groups",
+    "Users":"Users",
+    "confirm delete":"are you sure to delete",
+    "deletedDone":"Deleted Done",
+    "selectElementFirst":"Select Element First",
+    "addImage":"Add Image",
+    "Category":{
+      "name":"Category Name",
+      "photo":"Category Image",
+      "mainPhoto":"Main Photo",
+      "Category":"Add Category",
+      "uploadImage":"Category Upload Image",
+      "mainCate":"Main Category",
+      "code":"category code",
+      "relatedCat":"this category are related with another data can`t be deleted"
+  },
+  "ItemPhoto":{
+      "mainPic":"This is Main Photo Please Make another photo are Main Before Delete"
+  },
+  "security": {
+    "userTitle": "Users",
+    "roleTitle": "Groups",
+    "info": "Informations",
+    "code": "Code",
+    "nameAr": "Arabic Name",
+    "nameEn": "English Name",
+    "description": "Description",
+    "name": "Name",
+    "userName": "Usernme",
+    "password": "ُPassword",
+    "newPassword":"New Password",
+    "Confirmpassword":"Confirm Password",
+    "email": "Email",
+    "login":"LogIn",
+    "mobile": "Mobile",
+    "isActive": "Status",
+    "roles": "Roles",
+    "permissions": "Permissions",
+    "userRoles": "User Roles",
+    "rolePermissions": "Role Permissions",
+    "menuTitle": "Menu Title",
+    "userType": "User Type",
+    "nickName":"Nick Name",
+    "users": "Users",
+    "addUsers": "Add Users",
+    "orgType": "Organiztion Type",
+    "organization": "Organization",
+    "personType": "Groups",
+    "rank": "Rank",
+    "unit": "Unit",
+    "userData":"User Data",
+    "passNotMatch":"Password Not Match",
+    "confirmPass":"Confirm Password"
+  },
+  "item":{
+    "name":"Name",
+    "code":"Code",
+    "Category":"Category",
+    "brand":"Brand",
+    "sample":"Sample",
+    "addItem":"Add Item",
+    "editItem":"Edit Item",
+    "parentItem":"Parent Item",
+    "parentSameId":"Parent Same Item it`s can`t be",
+    "stopUseItem":"Stop Useing this item",
+    "confirmStop":"are you Sure you want Stop useing this item!",
+    "stopedDone":"Item Stop Useing Successfully",
+    "thisItemStoped":"this item Is Stoped Can`t be select",
+    "UnstopUseItem":"Return Item to Use",
+    "confirmUnStop":"are you Sure Return Use Item",
+    "unStopDone":"Return Use Item Done Successfully"
+  }
+}

@@ -14,13 +14,13 @@ export class BlogComponent implements OnInit {
   constructor(private articlesService: ArticlesService) { }
 
   ngOnInit(): void {
-    this.articlesService.getArticles().subscribe((response) => {
-      this.articles = response
-      console.log('articles', response)
-    },
-    (error)=> {
-      console.log(error)
-    })
+    // this.articlesService.getArticles().subscribe((response) => {
+    //   this.articles = response
+    //   console.log('articles', response)
+    // },
+    // (error)=> {
+    //   console.log(error)
+    // })
   }
 
 }

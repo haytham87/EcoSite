@@ -22,17 +22,18 @@
           <img src="../../../assets/images/main-logo-black.png" alt="NosaLogo" class="logo" width="190" height="63">
         </a>
 
-        <div class="header-search-conatiner">
-          <input name="search" class="search-field" placeholder="أنت بتدور على ايه؟">
+        <div class="header-search-conatiner" [dir]="this.baseService.isRTL?'rtl':'ltr'" [style]="this.baseService.isRTL?'text-align:right;float: right;':'text-align:left;float: left'">
+          <input name="search"  class="search-field" placeholder="{{'whatAreYouLookingFor'|translate}}">
 
-          <button class="search-btn">
-            <i-feather name="search"></i-feather>
-          </button>
+          <!-- <button class="search-btn">
+            <i-feather name="search" ></i-feather>
+          </button> -->
         </div>
 
         <div class="header-user-actions">
 
-          <span class="lang">English</span>
+          <span class="lang" *ngIf="dir" (click)="changeLangEN()">English</span>
+          <span class="lang" *ngIf="!dir" (click)="changeLangAR()">العربية</span>
 
           <div class="borderd"></div>
 
@@ -61,12 +62,12 @@
 
     <ul class="mobile-menu-category-list">
       <li class="menu-category">
-        <a routerLink="/home" class="menu-title">الرئيسية</a>
+        <a routerLink="/home" class="menu-title">{{'Home'|translate}}</a>
       </li>
 
       <li class="menu-category">
         <button class="accordion-menu" data-accordion-btn>
-          <p class="menu-title">العناية بالبشرة</p>
+          <p class="menu-title">{{'skinCare'|translate}}</p>
 
           <div>
             <i-feather name="plus" class="add-icon"></i-feather>
@@ -95,7 +96,7 @@
 
       <li class="menu-category">
         <button class="accordion-menu" data-accordion-btn>
-          <p class="menu-title">العناية بالشعر</p>
+          <p class="menu-title">{{'hairCare'|translate}}</p>
 
           <div>
             <i-feather name="plus" class="add-icon"></i-feather>
@@ -124,7 +125,7 @@
 
       <li class="menu-category">
         <button class="accordion-menu" data-accordion-btn>
-          <p class="menu-title">العناية بالجسم</p>
+          <p class="menu-title">{{'bodyCare'|translate}} </p>
 
           <div>
             <i-feather name="plus" class="add-icon"></i-feather>
@@ -181,11 +182,11 @@
       </li>
 
       <li class="menu-category">
-        <a routerLink="/blog" class="menu-title">المدونة</a>
+        <a routerLink="/blog" class="menu-title">{{'blog'|translate}}</a>
       </li>
 
       <li class="menu-category">
-        <a routerLink="/contact" class="menu-title">تواصل معنا</a>
+        <a routerLink="/contact" class="menu-title">{{'contactUs'|translate}}</a>
       </li>
     </ul>
 
@@ -193,7 +194,7 @@
       <ul class="menu-category-list">
         <li class="menu-category">
           <button class="accordion-menu" data-accordion-btn>
-            <p class="menu-title">اللغة</p>
+            <p class="menu-title">{{'lang'|translate}}</p>
 
             <i-feather name="chevron-left" class="caret-back"></i-feather>
           </button>

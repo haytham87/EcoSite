@@ -21,6 +21,7 @@ import { allIcons } from "angular-feather/icons";
 
 import { MatTabsModule } from '@angular/material/tabs';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ToastrModule } from 'ngx-toastr';
 
 export function createTranslateLoader(http: HttpClient): any {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
@@ -47,6 +48,7 @@ export function createTranslateLoader(http: HttpClient): any {
     ReactiveFormsModule,
     BrowserAnimationsModule,
     CoreModule,
+    ToastrModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

@@ -23,6 +23,7 @@ import { DonePaymentComponent } from './done-payment/done-payment.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -50,7 +51,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
     FormsModule, ReactiveFormsModule,
     NgxPaginationModule,
     FeatherModule,
-    CommonModule
+    CommonModule,
+    TranslateModule
   ]
 })
 export class MainModule { }
